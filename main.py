@@ -149,8 +149,7 @@ def main():
         # detection hand
         hand, img = detector.findHands(img, flipType=False)
 
-        cv2.rectangle(img, (350, 30), (350+280, 100), (250, 251, 217), cv2.FILLED)
-        # cv2.rectangle(img, (350, 30), (350 + 280, 100), (255, 255, 255), 2)
+        cv2.rectangle(img, (350, 30), (350 + 280, 100), (255, 255, 255), 2)
 
         equation_label = Label(350, 40, 200, 40, equation, 3)
         equation_label.draw(img)
